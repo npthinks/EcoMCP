@@ -36,9 +36,9 @@ The project uses a curated Indian Food Carbon Footprint dataset, originally sour
 
 **Dataset Pre-Processing**
 
-Region Normalization: Multiple regions listed for a single food item were standardized into a consistent, alphabetically sorted, comma-separated format.
-Unique ID Assignment: Each food item was assigned a unique identifier based on its region combination and order within that group.
-Format: The dataset is stored in JSON format, with each record containing:
+* Region Normalization: Multiple regions listed for a single food item were standardized into a consistent, alphabetically sorted, comma-separated format.
+* Unique ID Assignment: Each food item was assigned a unique identifier based on its region combination and order within that group.
+* Format: The dataset is stored in JSON format.
 
 **Key Columns**
 * ID → Unique identifier for the food item
@@ -89,6 +89,7 @@ uvicorn main:app --reload
 * The server will run at `http://127.0.0.1:8000/`
 
 ---
+
 
 
 

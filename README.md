@@ -49,7 +49,7 @@ git clone https://github.com/npthinks/EcoMCP.git
 cd EcoMCP
 ```
 
-2. Create a virtual environment using `uv` or `venv`:
+2. Create a virtual environment using `uv`:
 
 ```bash
 # Using uv
@@ -69,6 +69,7 @@ uvicorn main:app --reload
 * The server will run at `http://127.0.0.1:8000/`
 
 ---
+
 
 
 

@@ -83,7 +83,6 @@ def main():
     mcp.run(transport="stdio")
 
 if __name__ == "__main__":
-    # Start the MCP server over stdio for the client to discover tools
     main()
 
 

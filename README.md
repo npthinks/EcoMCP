@@ -14,6 +14,32 @@
 
 ---
 
+## 🧩 Architecture Overview
+
+* **Transport:** `stdio`
+* **API Host:** Localhost (`http://127.0.0.1:8000`)
+* **MCP Host:** Perplexity
+* **MCP Client:** FastMCP (handles requests and communicates with FastAPI)
+* **MCP Server:** FastAPI-based backend providing carbon footprint data
+
+**Flow:**
+
+```
+User Query → MCP Host → MCP Client → FastAPI Server → JSON Dataset → Client → Host → Response
+```
+
+---
+
+## 🛠️ Tech Stack
+
+* **Python 3.11
+* **FastAPI** (Backend API)
+* **FastMCP** (MCP client integration)
+* **Transport:** stdio
+* **Cursor IDE** for development
+
+---
+
 ## ⚙️ Installation
 
 1. Clone the repository:
@@ -44,27 +70,5 @@ uvicorn main:app --reload
 
 ---
 
-## 🧩 Architecture Overview
 
-**Transport:** `stdio`
-**API Host:** Localhost (`http://127.0.0.1:8000`)
-**MCP Client:** FastMCP (handles requests and communicates with FastAPI)
-**MCP Server:** FastAPI-based backend providing carbon footprint data
 
-**Flow:**
-
-```
-User Query → MCP Host → MCP Client → FastAPI Server → JSON Dataset → Client → Host → Response
-```
-
----
-
-## 🛠️ Tech Stack
-
-* **Python 3.11
-* **FastAPI** (Backend API)
-* **FastMCP** (MCP client integration)
-* **Transport:** stdio
-* **Cursor IDE** for development
-
----

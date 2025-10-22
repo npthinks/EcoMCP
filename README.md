@@ -32,7 +32,7 @@ User Query → MCP Host → MCP Client → FastAPI Server → JSON Dataset → C
 
 ## 🛠️ Tech Stack
 
-* **Python 3.11
+* **Python 3.11**
 * **FastAPI** (Backend API)
 * **FastMCP** (MCP client integration)
 * **Transport:** stdio
@@ -69,6 +69,7 @@ uvicorn main:app --reload
 * The server will run at `http://127.0.0.1:8000/`
 
 ---
+
 
 
 

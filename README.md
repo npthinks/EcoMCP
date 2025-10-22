@@ -30,6 +30,28 @@ User Query → MCP Host → MCP Client → FastAPI Server → JSON Dataset → C
 
 ---
 
+🗂️ Dataset
+
+The project uses a curated Indian Food Carbon Footprint dataset, originally sourced from Kaggle. It contains information on carbon footprints for various Indian foods along with their region(s) of origin.
+
+Dataset Pre-Processing
+
+Region Normalization: Multiple regions listed for a single food item were standardized into a consistent, alphabetically sorted, comma-separated format.
+Unique ID Assignment: Each food item was assigned a unique identifier based on its region combination and order within that group.
+Format: The dataset is stored in JSON format, with each record containing:
+
+ID → Unique identifier for the food item
+Food → Name of the food item
+Region → Single or combination of regions (e.g., "East, North, West")
+Carbon Footprint → Emissions in kg CO₂ per kg of food
+
+Key Features
+Supports queries by food name, region, or ID.
+Handles both single-region and multi-region foods.
+Cleaned and structured for use with the EcoMCP API.
+
+---
+
 ## 🛠️ Tech Stack
 
 * **Python 3.11**
@@ -69,6 +91,7 @@ uvicorn main:app --reload
 * The server will run at `http://127.0.0.1:8000/`
 
 ---
+
 
 
 

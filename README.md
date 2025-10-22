@@ -40,15 +40,13 @@ Region Normalization: Multiple regions listed for a single food item were standa
 Unique ID Assignment: Each food item was assigned a unique identifier based on its region combination and order within that group.
 Format: The dataset is stored in JSON format, with each record containing:
 
+**Key Columns**
 * ID → Unique identifier for the food item
 * Food → Name of the food item
-* Region → Single or combination of regions (e.g., "East, North, West")
-* Carbon Footprint → Emissions in kg CO₂ per kg of food
-
-Key Features
-Supports queries by food name, region, or ID.
-Handles both single-region and multi-region foods.
-Cleaned and structured for use with the EcoMCP API.
+* Region → Single or combination of regions (e.g., "North, West")
+* Category → Food type (e.g., Veg, Non-Veg)
+* Serving → Standard serving size
+* Carbon Footprint(kg CO2e) → Emissions in kg CO₂ per kg of food
 
 ---
 
@@ -91,6 +89,7 @@ uvicorn main:app --reload
 * The server will run at `http://127.0.0.1:8000/`
 
 ---
+
 
 
 

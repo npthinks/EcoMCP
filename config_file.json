@@ -1,0 +1,13 @@
+{
+    "mcpServers": {
+      "CarbonFootPrint": {
+        "command": "uv",
+        "args": [
+          "--directory",
+          "/Users/nishanth_p/Documents/Interview_Code/MCPProject",
+          "run",
+          "main.py"
+        ]
+      }
+    }
+  }

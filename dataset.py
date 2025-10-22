@@ -1,7 +1,7 @@
 import pandas as pd
 
 
-df = pd.read_csv("/Users/nishanth_p/Downloads/nutrition_cf - Sheet5.csv", sep = ";")
+df = pd.read_csv("nutrition_cf - Sheet5.csv", sep = ";")
 
 def clean_region(value):
     if pd.isna(value):
@@ -21,3 +21,4 @@ df["ID"] = df.groupby("Region").cumcount() + 1
 df["ID"] = df.apply(lambda row: id_dict[row["Region"]] + row["ID"], axis=1)
 
 df.to_json("NutritionIndia.json",orient = "records", indent = 4)
+

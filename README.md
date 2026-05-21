@@ -17,10 +17,9 @@
 ## 🧩 Architecture Overview
 
 * **Transport:** `stdio`
-* **API Host:** Localhost (`http://127.0.0.1:8000`)
-* **MCP Host:** Perplexity
-* **MCP Client:** FastMCP (handles requests and communicates with FastAPI)
-* **MCP Server:** FastAPI-based backend providing carbon footprint data
+* **MCP Host:** Perplexity AI
+* **MCP Client:** Perplexity's client connecting to my Localhost (`http://127.0.0.1:8000`)
+* **MCP Server:** FastAPI-based backend providing carbon footprint data, FastMCP (handles requests and communicates with FastAPI)
 
 **Flow:**
 
